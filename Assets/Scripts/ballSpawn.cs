@@ -70,7 +70,7 @@ public class ballSpawn : MonoBehaviour
         Debug.Log("respawned!!");
         justSpawned = true;
 
-        startSound.Play();
+        //startSound.Play();
         startSound.PlayDelayed(0.5f);
 
     }
