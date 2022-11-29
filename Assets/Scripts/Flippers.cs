@@ -35,7 +35,7 @@ public class Flippers : MonoBehaviour
 
         if (Input.GetAxis(controlName) == 1)
         {
-            Debug.Log("keys are pressed");
+            //Debug.Log("keys are pressed");
             mySpring.targetPosition = pressedPosition;
             //flipperSound.Play(); //sounds plays while pressed without stopping... --------------toFix--------------
         }

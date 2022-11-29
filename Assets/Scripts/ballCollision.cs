@@ -19,7 +19,6 @@ public class ballCollision : MonoBehaviour
     void Update()
     {
         //Debug.Log(collisionScore);
-
         //next: when dies, reduce score. if score==500, start particles  
     }
 

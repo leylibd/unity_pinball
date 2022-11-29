@@ -36,9 +36,9 @@ public class ballSpawn : MonoBehaviour
     {
         if (Input.anyKeyDown && justSpawned)
         {
-            //&& newBall.transform.position == startPos
             Debug.Log("im here");
             newBall.GetComponent<Rigidbody>().AddForce(0, 0, force);
+            //Debug.Log("key force pressed ");
             justSpawned = false;
         }
             
@@ -70,14 +70,15 @@ public class ballSpawn : MonoBehaviour
         Debug.Log("respawned!!");
         justSpawned = true;
 
-        //startSound.Play();
+        startSound.Play();
         startSound.PlayDelayed(0.5f);
 
     }
 
     IEnumerator spawnDelay()
     {
-        yield return new WaitForSeconds(5f); //doesn't work :( --------------toFix-------------- https://docs.unity3d.com/ScriptReference/WaitForSeconds.html
+        yield return new WaitForSeconds(2f); //doesn't work :( --------------toFix-------------- https://docs.unity3d.com/ScriptReference/WaitForSeconds.html
+        //workaround for delayed spawning: can place a collider a bit far from the table hole so it gets destroyed a few seconds after it falls through the hole
         Debug.Log("waited");
 
 
