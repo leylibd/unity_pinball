@@ -170,6 +170,7 @@ MonoBehaviour:
   hitStrenght: 80000
   flipperDamper: 150
   controlName: flipperLeft
+  flip: {fileID: 8300000, guid: dfd400e4015df1440b9aa9c8c8b29759, type: 3}
 --- !u!82 &3259291928371296253
 AudioSource:
   m_ObjectHideFlags: 0

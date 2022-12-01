@@ -67,6 +67,7 @@ public class ballSpawn : MonoBehaviour
 
         StartCoroutine(spawnDelay());
         newBall = Instantiate(ballPrefab, startPos, Quaternion.identity) as GameObject;
+        //GameObject.Instantiate(ballPrefab, startPos, Quaternion.identity);
         Debug.Log("respawned!!");
         justSpawned = true;
 
@@ -77,9 +78,10 @@ public class ballSpawn : MonoBehaviour
 
     IEnumerator spawnDelay()
     {
-        yield return new WaitForSeconds(2f); //doesn't work :( --------------toFix-------------- https://docs.unity3d.com/ScriptReference/WaitForSeconds.html
+        yield return new WaitForSeconds(5f); //doesn't work :( --------------toFix-------------- https://docs.unity3d.com/ScriptReference/WaitForSeconds.html
         //workaround for delayed spawning: can place a collider a bit far from the table hole so it gets destroyed a few seconds after it falls through the hole
-        Debug.Log("waited");
+
+        Debug.Log("waited"); //this works
 
 
     }

@@ -15,6 +15,7 @@ public class Flippers : MonoBehaviour
     HingeJoint hinge;
 
     AudioSource flipperSound;
+    public AudioClip flip;
 
     // Start is called before the first frame update
     void Start()
@@ -23,6 +24,7 @@ public class Flippers : MonoBehaviour
         hinge.useSpring = true;
 
         flipperSound = gameObject.GetComponent<AudioSource>();
+        
     }
 
     // Update is called once per frame
@@ -37,7 +39,8 @@ public class Flippers : MonoBehaviour
         {
             Debug.Log("keys are pressed");
             mySpring.targetPosition = pressedPosition;
-            flipperSound.Play(); //sounds plays while pressed without stopping... --------------toFix--------------
+            //flipperSound.Play(); //sounds plays while pressed without stopping... --------------toFix--------------
+            flipperSound.PlayOneShot(flip, 0.7f);
         }
 
         else
