@@ -2280,6 +2280,10 @@ PrefabInstance:
       value: flipperL
       objectReference: {fileID: 0}
     - target: {fileID: 5184545285535662613, guid: 2a90db0ef322bd14795a2be8e914a8eb, type: 3}
+      propertyPath: flip
+      value: 
+      objectReference: {fileID: 8300000, guid: dfd400e4015df1440b9aa9c8c8b29759, type: 3}
+    - target: {fileID: 5184545285535662613, guid: 2a90db0ef322bd14795a2be8e914a8eb, type: 3}
       propertyPath: hitStrenght
       value: 200000
       objectReference: {fileID: 0}
