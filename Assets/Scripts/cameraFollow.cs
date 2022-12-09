@@ -14,12 +14,12 @@ public class cameraFollow : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    /*void Update()
     {
 
         GameObject ballToFollow = ball.GetComponent<ballSpawn>().newBall;  //get ref of an instantiated ball
         target = ballToFollow.transform.position;
         transform.LookAt(target);
-        //this gets an error that the connection to ref object is lost bc object is destroyed. but it still works after the destroy --------------toFix--------------
-    }
+        
+    }*/
 }
